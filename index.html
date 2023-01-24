@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Portfolio maybe</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 dark:bg-black dark:bg-opacity-80">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="mb-2 mt-2">
+            <img src="dist/img/ai-removebg-head.png" alt="Ai" width="50" />
+          </div>
+
+          <div class="flex items-center px-4">
+            <button
+              id="menu"
+              name="menu"
+              type="button"
+              class="block absolute right-4 lg:hidden">
+              <span
+                class="menu-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span
+                class="menu-line transition duration-300 ease-in-out"></span>
+              <span
+                class="menu-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    Home
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    About
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    Portfolio
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#skill"
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    Skill
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- content -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-2xl font-bold text-primary lg:text-3xl">
+              Hi, I'm Anko
+            </h1>
+            <h2 class="font-semibold text-gray text-lg mt-2 mb-5">
+              Programmer
+            </h2>
+            <p class="font-medium text-gray mb-10 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              recusandae eligendi commodi labore veritatis repellendus quo
+              maiores? Ipsam, voluptate obcaecati.
+            </p>
+
+            <a
+              href="mailto: totallynotankooo@gmail.com"
+              class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img
+                src="dist/img/rename-ai.png"
+                alt="Ohto Ai"
+                class="max-w-full mx-auto" />
+              <span
+                class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#3b82f6"
+                    d="M54,-24.7C56.9,-8.8,37,7.4,17.2,21.2C-2.7,35.1,-22.4,46.6,-39.3,38.1C-56.2,29.6,-70.1,1.2,-63.1,-20.5C-56,-42.1,-28,-56.9,-1.2,-56.5C25.6,-56.1,51.2,-40.5,54,-24.7Z"
+                    transform="translate(100 100)"
+                    scale="(1.1)" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold text-primary text-xl mb-3">About me</h4>
+            <p class="font-medium text-base text-gray max-w-xl">
+              I'm new in this industry so I'm still learning some language for
+              now. And I'm self-taught, I don't know how to write code neatly
+              yet, but I know the basics.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-xl mb-3 text-primary">
+              Lets be friends
+            </h3>
+            <p class="font-medium text-base text-gray max-w-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae saepe dignissimos quisquam, minima velit maxime vel
+              fuga tempore beatae error?
+            </p>
+            <div class="flex items-center">
+              <!-- github -->
+              <a
+                href="https://github.com/nkrqh"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center mt-1 hover:text-primary">
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </a>
+
+              <!-- gmail -->
+              <a
+                href="mailto: totallynotankooo@gmail.com"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center mt-1 hover:text-primary">
+                <svg
+                  class="fill-current"
+                  width="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>Gmail</title>
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-2xl text-primary mb-2">Portfolio</h4>
+            <p class="font-medium text-md text-gray">
+              Will add some new projects here.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portfolio/11.png"
+                alt="Landing Page"
+                width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-black mt-5 mb-3">Space</h3>
+            <p class="font-medium text-base text-gray">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              aliquam incidunt culpa?
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portfolio/2.webp"
+                alt="Landing Page"
+                width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-black mt-5 mb-3">
+              Multiverse
+            </h3>
+            <p class="font-medium text-base text-gray">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              aliquam incidunt culpa?
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portfolio/33.png"
+                alt="Landing Page"
+                width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-black mt-5 mb-3">
+              Quantum Realm
+            </h3>
+            <p class="font-medium text-base text-gray">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              aliquam incidunt culpa?
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portfolio/444.jpg"
+                alt="Landing Page"
+                width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-black mt-5 mb-3">
+              Artifical Intelligence
+            </h3>
+            <p class="font-medium text-base text-gray">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              aliquam incidunt culpa?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill -->
+    <section id="skill" class="pt-36 pb-32 bg-slate-700">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-2xl text-primary mb-2">Skill</h4>
+            <p class="font-medium text-md text-gray">I'm still learning it.</p>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <svg
+              class="max-w-[80px] mx-4 py-4 fill-current text-orange-600 opacity-50 transition duration-500 hover:opacity-100 hover:cursor-pointer lg:mx-6 xl:mx-8"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>HTML5</title>
+              <path
+                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+            </svg>
+            <svg
+              class="max-w-[80px] mx-4 py-4 fill-current text-primary opacity-50 transition duration-500 hover:opacity-100 hover:cursor-pointer lg:mx-6 xl:mx-8"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>CSS3</title>
+              <path
+                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+            </svg>
+            <svg
+              class="max-w-[80px] mx-4 py-4 fill-current text-yellow-300 opacity-50 transition duration-500 hover:opacity-100 hover:cursor-pointer lg:mx-6 xl:mx-8"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>JavaScript</title>
+              <path
+                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+            </svg>
+            <svg
+              class="max-w-[80px] mx-4 py-4 fill-current text-cyan-400 opacity-50 transition duration-500 hover:opacity-100 hover:cursor-pointer lg:mx-6 xl:mx-8"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <title>Tailwind CSS</title>
+              <path
+                d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="bg-black pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
+            <h2 class="font-bold text-2xl text-white mb-5">Contact Me</h2>
+            <p>totallynotankooo@gmail.com</p>
+            <p>Jl. Jatimulya No. 6</p>
+            <p>Kabupaten Tangerang</p>
+
+            <!-- img -->
+            <div class="flex mb-5 text-white">
+              <!-- github -->
+              <a
+                href="https://github.com/nkrqh"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center mt-1 hover:text-primary">
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </a>
+
+              <!-- gmail -->
+              <a
+                href="mailto: totallynotankooo@gmail.com"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center mt-1 hover:text-primary">
+                <svg
+                  class="fill-current"
+                  width="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <title>Gmail</title>
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="w-full px-4 mb-12 md:w-1/2">
+            <h3 class="font-semibold text-2xl text-white mb-5">Link</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="inline-block text-base hover:text-primary mb-3">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="inline-block text-base hover:text-primary mb-3">
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="inline-block text-base hover:text-primary mb-3">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skill"
+                  class="inline-block text-base hover:text-primary mb-3">
+                  Skill
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-700">
+          <div class="flex justify-center">
+            <p class="font-medium text-sm text-gray">
+              Made With ❤️ By Anko, Using Tailwind Css
+              <a href="https://tailwindcss.com">
+                <img
+                  src="dist/img/clients/tailwind.png"
+                  alt="Tailwind"
+                  width="20"
+                  class="float-right" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
