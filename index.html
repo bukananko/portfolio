@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/css/final.css" rel="stylesheet" />
+    <link href="dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="dist/img/ai-removebg-head.png" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- header -->
     <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 dark:bg-black dark:bg-opacity-80">
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 dark:bg-black dark:bg-opacity-50">
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="mb-2 mt-2">
             <img src="dist/img/ai-removebg-head.png" alt="Ai" width="50" />
           </div>
 
-          <div class="flex items-center px-4">
+          <div class="flex items-center px-8">
             <button
               id="menu"
               name="menu"
@@ -39,40 +39,71 @@
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary dark:text-white">
                     Home
                   </a>
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary dark:text-white">
                     About
                   </a>
                 </li>
                 <li class="group">
                   <a
                     href="#portfolio"
-                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary dark:text-white">
                     Portfolio
                   </a>
                 </li>
                 <li class="group">
                   <a
                     href="#skills"
-                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary lg:flex-none lg:inline-flex">
+                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary dark:text-white">
                     Skills
                   </a>
                 </li>
               </ul>
             </nav>
+
+            <!-- darkmode -->
+            <div
+              id="darklogo"
+              class="px-8 transition duration-500 hover:cursor-pointer">
+              <!-- moon -->
+              <svg
+                id="darkmode"
+                class="fill-current dark:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M11.38 2.019a7.5 7.5 0 1 0 10.6 10.6C21.662 17.854 17.316 22 12.001 22 6.477 22 2 17.523 2 12c0-5.315 4.146-9.661 9.38-9.981z" />
+              </svg>
+
+              <!-- sun -->
+              <svg
+                id="lightmode"
+                class="hidden fill-current dark:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
     <!-- content -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-black">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -98,9 +129,9 @@
               <img
                 src="dist/img/rename-ai.png"
                 alt="Ohto Ai"
-                class="max-w-full mx-auto" />
+                class="max-w-full mx-auto relative z-10" />
               <span
-                class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
                 <svg
                   width="400"
                   height="400"
@@ -120,7 +151,7 @@
     </section>
 
     <!-- about -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-slate-800">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -141,7 +172,7 @@
               eos consequatur fugiat?
             </p>
 
-            <div class="flex mb-5 text-black">
+            <div class="flex mb-5 text-black dark:text-white">
               <!-- github -->
               <a
                 href="https://github.com/nkrqh"
@@ -180,7 +211,7 @@
     </section>
 
     <!-- portfolio -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-black">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -256,7 +287,7 @@
     </section>
 
     <!-- skill -->
-    <section id="skills" class="pt-36 pb-32 bg-slate-700">
+    <section id="skills" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
